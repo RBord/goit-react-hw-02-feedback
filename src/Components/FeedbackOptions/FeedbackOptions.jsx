@@ -1,26 +1,15 @@
-// import React from 'react';
+import React from 'react';
+import Section from '../Section/Section';
 
-
-// class FeedbackOptions extends React.Component {
-
-
-
-//     increment = (event) => {
-//         console.log('Добавляем в нужное поле')
-//     }
-
-//     render() {
-//         return (
-//             <div>
-//                 <h1>Please leave feedback</h1>
-//                 <div>
-//                     <button type='button' onClick={this.increment}>Good</button>
-//                     <button type='button' onClick={this.increment}>Neutral</button>
-//                     <button type='button' onClick={this.increment}>Bad</button>
-//                 </div>
-//             </div>
-//         )
-//     }
-// }
-
-// export default FeedbackOptions;
+const FeedbackOptions = ({incrementGood, incrementNeutral, incrementBad }) => (
+    <div>
+        <Section title='Please leave feedback'>
+            <div>
+                <button type='button' onClick={incrementGood}>Good</button>
+                <button type='button' onClick={incrementNeutral}>Neutral</button>
+                <button type='button' onClick={incrementBad}>Bad</button>
+            </div>
+        </Section>
+    </div>
+)
+export default FeedbackOptions;

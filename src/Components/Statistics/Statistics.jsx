@@ -1,20 +1,18 @@
-// import React from 'react';
+import React from "react";
+import Section from "../Section/Section";
 
-// class Statistics extends React.Component {
+const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
+    <div>
+        <Section title='Statistics'>
+             <div>
+                <p>Good: {good}</p>
+                <p>Neutral: {neutral}</p>
+                <p>Bad: {bad}</p>
+                <p>Total: {total}</p>
+                <p>Positive feedback: {positivePercentage} %</p>
+            </div>
+        </Section>
+    </div>
+)
     
-
-//     render() {
-//         return (
-//             <div>
-//                 <h1>Statistics</h1>
-//                 <div>
-//                     <p>Good: {this.state.good}</p>
-//                     <p>Neutral: {this.state.neutral}</p>
-//                     <p>Bad: {this.state.bad}</p>
-//                 </div>
-//             </div>
-//         )
-//     }
-// }
-
-// export default Statistics;
+export default Statistics;
