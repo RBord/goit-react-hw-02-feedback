@@ -48,7 +48,7 @@ class App extends React.Component {
         const totalFeedback = this.countTotalFeedback();
 
         return (
-            <div>
+            <>
                 <FeedbackOptions
                     incrementGood={this.incrementGood}
                     incrementNeutral={this.incrementNeutral}
@@ -64,7 +64,7 @@ class App extends React.Component {
                     />
                     : <Notification message='No feedback given'/>
                 }
-            </div>
+            </>
         )
     }
 }
